@@ -63,7 +63,7 @@ namespace GameLibrary
                 foreach (char c in mapLine)
                 {
                     int val = c - '0';
-                    layout[i, j] = (val == 1 ? 1 : 0);
+                    layout[i, j] = val;
                     PictureBox pb = CreateMapCell(val, LoadImg);
                     if (pb != null)
                     {
@@ -106,15 +106,8 @@ namespace GameLibrary
             switch (legendValue)
             {
                 // walkable
-                /*case 0:
-                    result = new PictureBox()
-                    {
-                        BackgroundImage = LoadImg(""),
-                        BackgroundImageLayout = ImageLayout.Stretch,
-                        Width = BLOCK_SIZE,
-                        Height = BLOCK_SIZE
-                    };
-                    break;*/
+                case 0:
+                    break;
 
                 // wall
                 case 1:
@@ -170,6 +163,24 @@ namespace GameLibrary
                         Height = BLOCK_SIZE
                     };
                     break;
+                case 6:
+                    result = new PictureBox()
+                    {
+                        BackgroundImage = LoadImg("boulder"),
+                        BackgroundImageLayout = ImageLayout.Stretch,
+                        Width = BLOCK_SIZE,
+                        Height = BLOCK_SIZE
+                    };
+                    break;
+                case 7:
+                    result = new PictureBox()
+                    {
+                        BackgroundImage = LoadImg("trees_Green"),
+                        BackgroundImageLayout = ImageLayout.Stretch,
+                        Width = BLOCK_SIZE,
+                        Height = BLOCK_SIZE
+                    };
+                    break;
             }
             return result;
         }
@@ -178,10 +189,13 @@ namespace GameLibrary
         {
             if (pos.row < 0 || pos.row >= NumRows ||
                 pos.col < 0 || pos.col >= NumCols ||
-                layout[pos.row, pos.col] == 1)
+                layout[pos.row, pos.col] == 1 ||
+                layout[pos.row, pos.col] == 6 ||
+                layout[pos.row, pos.col] == 7)
             {
                 return false;
             }
+
 
             if (pos.row == 3 && pos.col == 9)
             {

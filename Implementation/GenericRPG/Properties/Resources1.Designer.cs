@@ -83,6 +83,16 @@ namespace GenericRPG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boulder {
+            get {
+                object obj = ResourceManager.GetObject("boulder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap character {
             get {
                 object obj = ResourceManager.GetObject("character", resourceCulture);
@@ -206,6 +216,16 @@ namespace GenericRPG.Properties {
         internal static System.Drawing.Bitmap trees {
             get {
                 object obj = ResourceManager.GetObject("trees", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trees_Green {
+            get {
+                object obj = ResourceManager.GetObject("trees_Green", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

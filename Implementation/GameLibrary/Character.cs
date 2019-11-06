@@ -144,6 +144,10 @@ namespace GameLibrary
                 Position topleft = map.RowColToTopLeft(pos);
                 Pic.Left = topleft.col;
                 Pic.Top = topleft.row;
+                if(Mana != MaxMana)
+                {
+                    Mana += 5;                  //Adds the ability to regen mana while walking
+                }    
             }
         }
 

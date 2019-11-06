@@ -20,6 +20,7 @@ namespace GameLibrary
         private const float LVLINC_MANA = 10;
 
         private const float SIMPLEATTACK_RANDOM_AMT = 0.25f;
+        private const float MAGICATTACK_RANDOM_AMT = 0.25f;
         #endregion
 
         public string Name { get; protected set; }
@@ -90,6 +91,19 @@ namespace GameLibrary
             float randMin = 1 - SIMPLEATTACK_RANDOM_AMT;
             float randMult = (float)(rand.NextDouble() * (randMax - randMin)) + randMin;
             receiver.Health -= (baseDamage * randMult);
+        }
+
+        public void MagicAttack(Mortal receiver)
+        {
+            if(Mana >= 10)
+            {
+                Mana -= 10;
+                float baseDamage = Math.Abs(Str * 1.2f - receiver.Def);
+                float randMax = 3 + MAGICATTACK_RANDOM_AMT;
+                float randMin = 3 - MAGICATTACK_RANDOM_AMT;
+                float randMult = (float)(rand.NextDouble() * (randMax - randMin)) + randMin;
+                receiver.Health -= (baseDamage * randMult);
+            }
         }
 
         public void FinalAttack(Mortal receiver)

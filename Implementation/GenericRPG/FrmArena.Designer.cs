@@ -423,6 +423,7 @@
       this.btnMagicAttack.TabIndex = 14;
       this.btnMagicAttack.Text = "Magic Attack";
       this.btnMagicAttack.UseVisualStyleBackColor = false;
+      this.btnMagicAttack.Click += new System.EventHandler(this.btnMagicAttack_Click);
       // 
       // btnRun
       // 

@@ -30,7 +30,7 @@ namespace GenericRPG
             frmMap.Show();
             Hide();
 
-            frmMap.character.SelectCharacter(100, 100, 100);
+            frmMap.character.SelectCharacter(10, 10, 40);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace GenericRPG
             frmMap.Show();
             Hide();
 
-            frmMap.character.SelectCharacter(100, 100, 100);
+            frmMap.character.SelectCharacter(10, 15, 25);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace GenericRPG
             frmMap.Show();
             Hide();
 
-            frmMap.character.SelectCharacter(100, 100, 100);
+            frmMap.character.SelectCharacter(15, 10, 25);
         }
     }
 }

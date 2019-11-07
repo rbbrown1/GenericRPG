@@ -14,6 +14,8 @@ namespace GenericRPG
 {
     public partial class FrmCharacterSelect : Form
     {
+        public static string sprite;
+
         public FrmCharacterSelect()
         {
             InitializeComponent();
@@ -22,6 +24,7 @@ namespace GenericRPG
 
         private void button1_Click(object sender, EventArgs e)
         {
+            sprite = "character";
             FrmMap frmMap = new FrmMap();
 
             frmMap.Show();
@@ -32,6 +35,7 @@ namespace GenericRPG
 
         private void button2_Click(object sender, EventArgs e)
         {
+            sprite = "character2";
             FrmMap frmMap = new FrmMap();
 
             frmMap.Show();
@@ -42,6 +46,7 @@ namespace GenericRPG
 
         private void button3_Click(object sender, EventArgs e)
         {
+            sprite = "character3";
             FrmMap frmMap = new FrmMap();
 
             frmMap.Show();

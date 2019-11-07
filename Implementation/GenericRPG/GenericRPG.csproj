@@ -136,6 +136,8 @@
     <None Include="Resources\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\sprite3.jpg" />
+    <None Include="Resources\sprite2alternate.jpg" />
     <None Include="Resources\trees%28Green%29.png" />
     <None Include="Resources\trees.png" />
     <None Include="Resources\water.jpg" />

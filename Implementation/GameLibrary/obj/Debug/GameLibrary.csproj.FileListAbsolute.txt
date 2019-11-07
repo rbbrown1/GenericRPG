@@ -22,3 +22,11 @@ C:\Users\mture\source\repos\rbbrown1\GenericRPG\Implementation\GameLibrary\bin\D
 C:\Users\mture\source\repos\rbbrown1\GenericRPG\Implementation\GameLibrary\bin\Debug\Newtonsoft.Json.dll
 C:\Users\mture\source\repos\rbbrown1\GenericRPG\Implementation\GameLibrary\bin\Debug\Newtonsoft.Json.xml
 C:\Users\mture\source\repos\rbbrown1\GenericRPG\Implementation\GameLibrary\obj\Debug\GameLibrary.csproj.CopyComplete
+C:\Users\kylem\Source\Repos\rbbrown1\GenericRPG\Implementation\GameLibrary\obj\Debug\GameLibrary.csprojAssemblyReference.cache
+C:\Users\kylem\Source\Repos\rbbrown1\GenericRPG\Implementation\GameLibrary\obj\Debug\GameLibrary.dll
+C:\Users\kylem\Source\Repos\rbbrown1\GenericRPG\Implementation\GameLibrary\obj\Debug\GameLibrary.pdb
+C:\Users\kylem\Source\Repos\rbbrown1\GenericRPG\Implementation\GameLibrary\bin\Debug\GameLibrary.dll
+C:\Users\kylem\Source\Repos\rbbrown1\GenericRPG\Implementation\GameLibrary\bin\Debug\GameLibrary.pdb
+C:\Users\kylem\Source\Repos\rbbrown1\GenericRPG\Implementation\GameLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kylem\Source\Repos\rbbrown1\GenericRPG\Implementation\GameLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kylem\Source\Repos\rbbrown1\GenericRPG\Implementation\GameLibrary\obj\Debug\GameLibrary.csproj.CopyComplete

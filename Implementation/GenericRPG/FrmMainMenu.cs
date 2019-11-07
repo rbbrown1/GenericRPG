@@ -23,11 +23,16 @@ namespace GenericRPG
         {
             Game.GetGame().ChangeState(GameState.ON_MAP);
 
+            FrmCharacterSelect charSel = new FrmCharacterSelect();
+            charSel.Show();
+            Hide();
+
+            /*
             FrmMap frmMap = new FrmMap();
             frmMap.FormClosing += delegate { this.Show(); };
 
             frmMap.Show();
-            Hide();
+            Hide(); */
         }
 
         private void BtnQuit_Click(object sender, EventArgs e)

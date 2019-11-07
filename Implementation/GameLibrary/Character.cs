@@ -46,6 +46,14 @@ namespace GameLibrary
             ShouldLevelUp = false;
         }
 
+        // getter for character select screen
+        public void SelectCharacter(float str, float def, float mana)
+        {
+            Str = str;
+            Def = def;
+            Mana = mana;
+        }
+
         // character constructor overload to feed it saved data
         // this function loads teh character from saved data
         public void LoadCharacter(string data)

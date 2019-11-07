@@ -57,6 +57,12 @@
     <Compile Include="FrmArena.Designer.cs">
       <DependentUpon>FrmArena.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCharacterSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCharacterSelect.Designer.cs">
+      <DependentUpon>FrmCharacterSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGameOver.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmArena.resx">
       <DependentUpon>FrmArena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCharacterSelect.resx">
+      <DependentUpon>FrmCharacterSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGameOver.resx">
       <DependentUpon>FrmGameOver.cs</DependentUpon>

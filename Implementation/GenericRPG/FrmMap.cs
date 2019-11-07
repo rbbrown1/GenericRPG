@@ -11,7 +11,7 @@ namespace GenericRPG
 {
     public partial class FrmMap : Form
     {
-        private Character character;
+        public Character character;
         private Map map;
         private Game game;
 

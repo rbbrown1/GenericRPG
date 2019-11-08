@@ -30,7 +30,7 @@ namespace GenericRPG
             frmMap.Show();
             Hide();
 
-            frmMap.character.SelectCharacter(Resources.ResourceManager.GetObject(sprite) as Bitmap, "Mega Man", 10, 10, 40);
+            frmMap.character.SelectCharacter(Resources.ResourceManager.GetObject("character") as Bitmap, "Mega Man", 10, 10, 40);
         }
 
         private void button2_Click(object sender, EventArgs e)

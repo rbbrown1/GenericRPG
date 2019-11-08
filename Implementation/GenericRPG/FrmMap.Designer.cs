@@ -25,12 +25,14 @@
     private void InitializeComponent() {
             this.grpMap = new System.Windows.Forms.GroupBox();
             this.pauseBox = new System.Windows.Forms.GroupBox();
+            this.pitFall = new System.Windows.Forms.GroupBox();
             this.BtnQuit = new System.Windows.Forms.Button();
             this.BtnStats = new System.Windows.Forms.Button();
             this.BtnSaveGame = new System.Windows.Forms.Button();
             this.BtnContinue = new System.Windows.Forms.Button();
             this.PauseBtn = new System.Windows.Forms.Button();
             this.pauseBox.SuspendLayout();
+            this.pitFall.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpMap
@@ -59,6 +61,19 @@
             this.pauseBox.TabIndex = 2;
             this.pauseBox.TabStop = false;
             this.pauseBox.Text = "Game Paused";
+            // 
+            // pitFall
+            // 
+            this.pitFall.BackColor = System.Drawing.SystemColors.Menu;
+            this.pitFall.Enabled = false;
+            this.pitFall.Font = new System.Drawing.Font("Comic Sans MS", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pitFall.Location = new System.Drawing.Point(1245, 209);
+            this.pitFall.Name = "pitFall";
+            this.pitFall.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.pitFall.Size = new System.Drawing.Size(700, 700);
+            this.pitFall.TabIndex = 2;
+            this.pitFall.TabStop = false;
+            this.pitFall.Text = "You're in a HOLE!!";
             // 
             // BtnQuit
             // 
@@ -122,6 +137,7 @@
             this.ClientSize = new System.Drawing.Size(1996, 1017);
             this.Controls.Add(this.PauseBtn);
             this.Controls.Add(this.pauseBox);
+            this.Controls.Add(this.pitFall);
             this.Controls.Add(this.grpMap);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FrmMap";
@@ -129,6 +145,7 @@
             this.Text = "Map";
             this.Load += new System.EventHandler(this.FrmMap_Load);
             this.pauseBox.ResumeLayout(false);
+            this.pitFall.ResumeLayout(false);
             this.ResumeLayout(false);
 
     }
@@ -136,6 +153,7 @@
     #endregion
     private System.Windows.Forms.GroupBox grpMap;
         private System.Windows.Forms.GroupBox pauseBox;
+        private System.Windows.Forms.GroupBox pitFall;
         private System.Windows.Forms.Button BtnStats;
         private System.Windows.Forms.Button BtnSaveGame;
         private System.Windows.Forms.Button BtnContinue;

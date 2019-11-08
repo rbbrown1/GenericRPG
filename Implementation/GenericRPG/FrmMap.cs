@@ -78,6 +78,22 @@ namespace GenericRPG
                     FrmArena frmArena = new FrmArena();
                     frmArena.Show();
                 }
+
+                if (game.State == GameState.IN_HOLE)
+                {
+                    // show the in_hole menu
+                    pitFall.Location = new Point(
+                        this.Width / 2 - pitFall.Width / 2,
+                        this.Height / 2 - pitFall.Height / 2
+                        );
+                    pitFall.Show();
+
+                    pitFall.Enabled = true;
+                    System.Threading.Thread.Sleep(5000);
+                    Game.GetGame().ChangeState(GameState.ON_MAP);
+                    pitFall.Enabled = false;
+                    pitFall.Hide();
+                }
             }
             return base.ProcessDialogKey(keyData);
         }

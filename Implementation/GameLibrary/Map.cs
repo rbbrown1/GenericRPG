@@ -14,7 +14,9 @@ namespace GameLibrary
         private const int BOUNDARY_PAD = 5;
         private const int BLOCK_SIZE = 50;
         public double encounterChance;
+        public double pitChance;
         private Random rand;
+        private Random rnd;
 
         public int CharacterStartRow { get; private set; }
         public int CharacterStartCol { get; private set; }
@@ -97,7 +99,9 @@ namespace GameLibrary
 
             // initialize for game
             encounterChance = 0.15;
+            pitChance = 0.10;
             rand = new Random();
+            rnd = new Random();
             Game.GetGame().ChangeState(GameState.ON_MAP);
 
             // return Character object from reading map
@@ -223,6 +227,17 @@ namespace GameLibrary
             else
             {
                 encounterChance += 0.10;
+            }
+
+
+            if (rnd.NextDouble() < pitChance)
+            {
+                pitChance = 0.10;
+                Game.GetGame().ChangeState(GameState.IN_HOLE);
+            }
+            else
+            {
+                pitChance += 0.05;
             }
 
             return true;

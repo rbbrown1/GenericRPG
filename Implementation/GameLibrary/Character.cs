@@ -161,17 +161,7 @@ namespace GameLibrary
                     Mana += 5;                  //Adds the ability to regen mana while walking
                 }
 
-                Random rnd = new Random();
-                int pitChance = rnd.Next(1, 11);
-                if (pitChance == 3)
-                {
-                    System.Threading.Thread.Sleep(1000);
-                    Game.GetGame().ChangeState(GameState.PAUSED);
-                    Console.WriteLine("You're stuck in a hole!");
-                    Console.WriteLine("Takes time to climb out...");
-                    System.Threading.Thread.Sleep(5000);
-                    Game.GetGame().ChangeState(GameState.ON_MAP);
-                }
+                
 
             }
         }

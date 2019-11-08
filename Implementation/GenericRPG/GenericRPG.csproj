@@ -110,14 +110,14 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources1.Designer.cs">
+    <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -136,8 +136,8 @@
     <None Include="Resources\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sprite3.jpg" />
-    <None Include="Resources\sprite2alternate.jpg" />
+    <None Include="Resources\link.png" />
+    <None Include="Resources\mario.png" />
     <None Include="Resources\trees%28Green%29.png" />
     <None Include="Resources\trees.png" />
     <None Include="Resources\water.jpg" />

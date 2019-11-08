@@ -100,3 +100,4 @@ C:\Users\kylem\Source\Repos\GenericRPG\Implementation\GenericRPG\obj\Debug\Gener
 C:\Users\kylem\Source\Repos\GenericRPG\Implementation\GenericRPG\obj\Debug\GenericRPG.csproj.CopyComplete
 C:\Users\kylem\Source\Repos\GenericRPG\Implementation\GenericRPG\obj\Debug\GenericRPG.exe
 C:\Users\kylem\Source\Repos\GenericRPG\Implementation\GenericRPG\obj\Debug\GenericRPG.pdb
+C:\Users\rbbrown\source\repos\GenericRPG\Implementation\GenericRPG\obj\Debug\GenericRPG.FrmCharacterSelect.resources

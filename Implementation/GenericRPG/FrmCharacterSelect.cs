@@ -36,13 +36,12 @@ namespace GenericRPG
 
         private void button2_Click(object sender, EventArgs e)
         {
-            sprite = "character2";
             FrmMap frmMap = new FrmMap();
 
             frmMap.Show();
             Hide();
 
-            frmMap.character.SelectCharacter(Resources.ResourceManager.GetObject(sprite) as Bitmap, "Mario", 10, 15, 25);
+            frmMap.character.SelectCharacter(Resources.ResourceManager.GetObject("mario") as Bitmap, "Mario", 10, 15, 25);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -53,7 +52,7 @@ namespace GenericRPG
             frmMap.Show();
             Hide();
 
-            frmMap.character.SelectCharacter(Resources.ResourceManager.GetObject(sprite) as Bitmap, "Link", 15, 10, 25);
+            frmMap.character.SelectCharacter(Resources.ResourceManager.GetObject("link") as Bitmap, "Link", 15, 10, 25);
         }
     }
 }

@@ -70,7 +70,7 @@
             this.pitFall.Location = new System.Drawing.Point(1245, 209);
             this.pitFall.Name = "pitFall";
             this.pitFall.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pitFall.Size = new System.Drawing.Size(700, 700);
+            this.pitFall.Size = new System.Drawing.Size(1000, 700);
             this.pitFall.TabIndex = 2;
             this.pitFall.TabStop = false;
             this.pitFall.Text = "You're in a HOLE!!";

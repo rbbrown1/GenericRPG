@@ -99,7 +99,7 @@ namespace GameLibrary
 
             // initialize for game
             encounterChance = 0.15;
-            pitChance = 0.10;
+            pitChance = 0.05;
             rand = new Random();
             rnd = new Random();
             Game.GetGame().ChangeState(GameState.ON_MAP);
@@ -232,7 +232,7 @@ namespace GameLibrary
 
             if (rnd.NextDouble() < pitChance)
             {
-                pitChance = 0.10;
+                pitChance = 0.05;
                 Game.GetGame().ChangeState(GameState.IN_HOLE);
             }
             else

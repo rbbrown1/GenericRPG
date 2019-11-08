@@ -160,9 +160,6 @@ namespace GameLibrary
                 {
                     Mana += 5;                  //Adds the ability to regen mana while walking
                 }
-
-                
-
             }
         }
 

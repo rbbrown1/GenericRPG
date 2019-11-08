@@ -79,3 +79,4 @@ C:\Users\kylem\Source\Repos\rbbrown1\GenericRPG\Implementation\GenericRPG\bin\De
 C:\Users\kylem\Source\Repos\rbbrown1\GenericRPG\Implementation\GenericRPG\bin\Debug\Newtonsoft.Json.xml
 C:\Users\kylem\Source\Repos\rbbrown1\GenericRPG\Implementation\GenericRPG\obj\Debug\GenericRPG.csproj.CopyComplete
 C:\Users\kylem\Source\Repos\rbbrown1\GenericRPG\Implementation\GenericRPG\obj\Debug\GenericRPG.FrmCharacterSelect.resources
+C:\Users\mture\Source\Repos\rbbrown1\GenericRPG\Implementation\GenericRPG\obj\Debug\GenericRPG.FrmCharacterSelect.resources

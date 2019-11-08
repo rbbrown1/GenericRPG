@@ -155,7 +155,15 @@ namespace GameLibrary
                 if(Mana != MaxMana)
                 {
                     Mana += 5;                  //Adds the ability to regen mana while walking
-                }    
+                }
+
+                Random rnd = new Random();
+                int pitChance = rnd.Next(1, 11);
+                if (pitChance == 10)
+                {
+                    Console.WriteLine("You're stuck in a hole!");
+                }
+
             }
         }
 

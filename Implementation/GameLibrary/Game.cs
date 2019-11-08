@@ -12,6 +12,7 @@ namespace GameLibrary
         PAUSED,
         FIGHTING,
         DEAD,
+        IN_HOLE,
     }
 
     public class Game

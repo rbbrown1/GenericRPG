@@ -237,7 +237,7 @@ namespace GameLibrary
             }
             else
             {
-                pitChance += 0.05;
+                pitChance += 0.01;
             }
 
             return true;

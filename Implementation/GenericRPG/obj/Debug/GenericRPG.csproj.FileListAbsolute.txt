@@ -101,3 +101,4 @@ C:\Users\kylem\Source\Repos\GenericRPG\Implementation\GenericRPG\obj\Debug\Gener
 C:\Users\kylem\Source\Repos\GenericRPG\Implementation\GenericRPG\obj\Debug\GenericRPG.exe
 C:\Users\kylem\Source\Repos\GenericRPG\Implementation\GenericRPG\obj\Debug\GenericRPG.pdb
 C:\Users\mture\Source\Repos\rbbrown1\GenericRPG\Implementation\GenericRPG\obj\Debug\GenericRPG.FrmCharacterSelect.resources
+C:\Users\rbbrown\source\repos\GenericRPG\Implementation\GenericRPG\obj\Debug\GenericRPG.FrmCharacterSelect.resources

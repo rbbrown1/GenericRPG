@@ -40,9 +40,10 @@ namespace GenericRPG
             JObject obj = JObject.Parse(json);
 
             map.encounterChance = (double)obj["map"]["encounterChance"];
+            map.CharacterSprite = (string)obj["map"]["CharacterSprite"];
 
             //update character vals
-            character.LoadCharacter(json);
+            character.LoadCharacter(json, Resources.ResourceManager.GetObject(map.CharacterSprite) as Bitmap);
         }
         // must override the function which receives keyboard presses
         // because the buttons on the screen would "steal" the event
@@ -112,9 +113,7 @@ namespace GenericRPG
 
         private void BtnQuit_Click(object sender, EventArgs e)
         {
-            Game.GetGame().ChangeState(GameState.MAIN_MENU);
-
-            this.Close();
+            Application.Exit();
         }
 
         private void BtnSaveGame_Click(object sender, EventArgs e)

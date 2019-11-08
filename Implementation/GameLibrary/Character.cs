@@ -59,7 +59,7 @@ namespace GameLibrary
 
         // character constructor overload to feed it saved data
         // this function loads teh character from saved data
-        public void LoadCharacter(string data)
+        public void LoadCharacter(string data, Bitmap bmp)
         {
             Console.WriteLine(data);
             JObject obj = JObject.Parse(data);
@@ -70,6 +70,7 @@ namespace GameLibrary
                 Convert.ToInt32(obj["Character"]["pos"]["col"])
                 );
 
+            Pic.BackgroundImage = bmp;
             this.ShouldLevelUp = Convert.ToBoolean(obj["Character"]["ShouldLevelUp"]);
             this.SetLevel((int)obj["Character"]["Level"]);
             this.XP = (float)(obj["Character"]["XP"]);

@@ -1,4 +1,5 @@
 ﻿using GameLibrary;
+using GenericRPG.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +31,7 @@ namespace GenericRPG
             frmMap.Show();
             Hide();
 
-            frmMap.character.SelectCharacter(10, 10, 40);
+            frmMap.character.SelectCharacter(Resources.ResourceManager.GetObject(sprite) as Bitmap, "Mega Man", 10, 10, 40);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,7 +42,7 @@ namespace GenericRPG
             frmMap.Show();
             Hide();
 
-            frmMap.character.SelectCharacter(10, 15, 25);
+            frmMap.character.SelectCharacter(Resources.ResourceManager.GetObject(sprite) as Bitmap, "Mario", 10, 15, 25);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -52,7 +53,7 @@ namespace GenericRPG
             frmMap.Show();
             Hide();
 
-            frmMap.character.SelectCharacter(15, 10, 25);
+            frmMap.character.SelectCharacter(Resources.ResourceManager.GetObject(sprite) as Bitmap, "Link", 15, 10, 25);
         }
     }
 }

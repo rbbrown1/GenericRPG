@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -47,8 +48,10 @@ namespace GameLibrary
         }
 
         // getter for character select screen
-        public void SelectCharacter(float str, float def, float mana)
+        public void SelectCharacter(Bitmap bmp, String name, float str, float def, float mana)
         {
+            Pic.BackgroundImage = bmp;
+            Name = name;
             Str = str;
             Def = def;
             Mana = mana;

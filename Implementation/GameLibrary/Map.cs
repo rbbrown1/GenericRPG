@@ -23,6 +23,9 @@ namespace GameLibrary
 
         public static bool boss = false;
 
+        public String CharacterSprite = "character";
+
+
         /// <summary>
         /// 
         /// </summary>
@@ -125,7 +128,7 @@ namespace GameLibrary
                 case 2:
                     result = new PictureBox()
                     {
-                        BackgroundImage = LoadImg("character"),
+                        BackgroundImage = LoadImg(CharacterSprite),
                         BackgroundImageLayout = ImageLayout.Stretch,
                         Width = BLOCK_SIZE,
                         Height = BLOCK_SIZE
@@ -204,7 +207,13 @@ namespace GameLibrary
                 encounterChance = 0.15;
                 Game.GetGame().ChangeState(GameState.FIGHTING);
             }
-
+            /*
+            if (pos.row == 1 && pos.col == 10)
+            {
+                character = map.LoadMap("Resources/level2.txt", grpMap,
+                str => Resources.ResourceManager.GetObject(str) as Bitmap);
+            }
+            */
             // Roll for fighting chance
             if (rand.NextDouble() < encounterChance)
             {

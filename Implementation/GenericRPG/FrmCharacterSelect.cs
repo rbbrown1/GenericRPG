@@ -53,7 +53,7 @@ namespace GenericRPG
             Hide();
 
             Game.GetGame().map.CharacterSprite = "link";
-            frmMap.character.SelectCharacter(Resources.ResourceManager.GetObject("link") as Bitmap, "Link", 15, 10, 25);
+            frmMap.character.SelectCharacter(Resources.ResourceManager.GetObject("link") as Bitmap, "Link", 12, 8, 10);
         }
     }
 }

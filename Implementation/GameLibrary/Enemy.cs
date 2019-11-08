@@ -55,7 +55,6 @@ namespace GameLibrary
                 Mana /= (float)rand.NextDouble() * (WEAKEN_MAX - WEAKEN_MIN) + WEAKEN_MIN;
                 Mana /= 1.5f;
                 Str /= (float)rand.NextDouble() * (WEAKEN_MAX - WEAKEN_MIN) + WEAKEN_MIN;
-                Str /= 2;
                 Def /= (float)rand.NextDouble() * (WEAKEN_MAX - WEAKEN_MIN) + WEAKEN_MIN;
                 Def *= 1.5f;
             }

@@ -161,10 +161,14 @@ namespace GameLibrary
                 }
 
                 Random rnd = new Random();
-                int pitChance = rnd.Next(1, 11);
-                if (pitChance == 10)
+                int pitChance = rnd.Next(1, 6);
+                if (pitChance == 3)
                 {
+                    Game.GetGame().ChangeState(GameState.PAUSED);
                     Console.WriteLine("You're stuck in a hole!");
+                    Console.WriteLine("Takes time to climb out...");
+                    System.Threading.Thread.Sleep(5000);
+                    Game.GetGame().ChangeState(GameState.ON_MAP);
                 }
 
             }
